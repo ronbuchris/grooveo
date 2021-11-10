@@ -86,7 +86,6 @@ export const MainApp = () => {
                 <label htmlFor="toggle"></label>
             </div>
             {loops && <LoopList isPlay={isPlay} loops={loops} onStop={onStop} onPlay={onPlay} />}
-
         </div>
     )
 }
