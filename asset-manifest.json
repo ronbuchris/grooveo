@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/grooveo/static/css/main.6a6143ff.chunk.css",
-    "main.js": "/grooveo/static/js/main.e5ba7e81.chunk.js",
-    "main.js.map": "/grooveo/static/js/main.e5ba7e81.chunk.js.map",
+    "main.js": "/grooveo/static/js/main.7cd3690e.chunk.js",
+    "main.js.map": "/grooveo/static/js/main.7cd3690e.chunk.js.map",
     "runtime-main.js": "/grooveo/static/js/runtime-main.69faa6e2.js",
     "runtime-main.js.map": "/grooveo/static/js/runtime-main.69faa6e2.js.map",
-    "static/js/2.96cdcbd1.chunk.js": "/grooveo/static/js/2.96cdcbd1.chunk.js",
-    "static/js/2.96cdcbd1.chunk.js.map": "/grooveo/static/js/2.96cdcbd1.chunk.js.map",
+    "static/js/2.8797532e.chunk.js": "/grooveo/static/js/2.8797532e.chunk.js",
+    "static/js/2.8797532e.chunk.js.map": "/grooveo/static/js/2.8797532e.chunk.js.map",
     "index.html": "/grooveo/index.html",
     "static/css/main.6a6143ff.chunk.css.map": "/grooveo/static/css/main.6a6143ff.chunk.css.map",
-    "static/js/2.96cdcbd1.chunk.js.LICENSE.txt": "/grooveo/static/js/2.96cdcbd1.chunk.js.LICENSE.txt",
+    "static/js/2.8797532e.chunk.js.LICENSE.txt": "/grooveo/static/js/2.8797532e.chunk.js.LICENSE.txt",
     "static/media/120_future_funk_beats_25.5eb417fc.mp3": "/grooveo/static/media/120_future_funk_beats_25.5eb417fc.mp3",
     "static/media/120_stutter_breakbeats_16.37c82282.mp3": "/grooveo/static/media/120_stutter_breakbeats_16.37c82282.mp3",
     "static/media/Bass_Warwick_heavy_funk_groove_on_E_120BPM.52c24c81.mp3": "/grooveo/static/media/Bass_Warwick_heavy_funk_groove_on_E_120BPM.52c24c81.mp3",
@@ -30,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.69faa6e2.js",
-    "static/js/2.96cdcbd1.chunk.js",
+    "static/js/2.8797532e.chunk.js",
     "static/css/main.6a6143ff.chunk.css",
-    "static/js/main.e5ba7e81.chunk.js"
+    "static/js/main.7cd3690e.chunk.js"
   ]
 }
