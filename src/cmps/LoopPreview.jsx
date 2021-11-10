@@ -9,12 +9,12 @@ export const LoopPreview = ({loop, onPlay,onStop}) => {
             <div className='loop-actions flex'>
                 {!isOn && <div className='btn flex align-center' onClick={()=>{
                     setIsOn(true);
-                    onPlay(loop.path)
+                    onPlay(loop.path,loop.name)
                 }}>
                    Turn on <MdOutlineMusicNote /> </div>}
                 {isOn && <div className='btn flex align-center' onClick={()=>{
                     setIsOn(false);
-                    onStop(loop.path)
+                    onStop(loop.name)
                 }}>
                     Turn off <MdOutlineMusicOff /> </div>}
             </div>

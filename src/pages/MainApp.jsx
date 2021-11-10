@@ -6,6 +6,7 @@ export const MainApp = () => {
     const [isPlay, setIsPlay] = useState(false);
     const [isTurnOn, SetIsTurnOn] = useState(false);
     const [activeLoops, setActiveLoops] = useState([]);
+    const [activeLoopsName, setactiveLoopsName] = useState([]);
 
     const onActivate = (bool) => {
         SetIsTurnOn(bool);
@@ -32,14 +33,12 @@ export const MainApp = () => {
     }
 
 
-    const onPlay = (path) => {
+    const onPlay = (path, currName) => {
         const loop = new Audio(path);
 
         if (isPlay) {
-            const isLoopPlaying = activeLoops.some(activeLoop => {
-                const { href } = window.location;
-                const newPath = href + path.substring(1);
-                return newPath === activeLoop.src;
+            const isLoopPlaying = activeLoopsName.some(name => {
+                return name === currName;
             })
             if (isLoopPlaying) return;
             const currentTime = activeLoops[0].currentTime * 1000;
@@ -58,21 +57,25 @@ export const MainApp = () => {
         const newActiveLoops = [...activeLoops];
         newActiveLoops.push(loop);
         setActiveLoops(newActiveLoops);
-        console.log(`Push`, newActiveLoops)
+        const newActiveLoopsName = [...activeLoopsName]
+        newActiveLoopsName.push(currName)
+        setactiveLoopsName(newActiveLoopsName)
+
     }
 
-    const onStop = (path) => {
+    const onStop = (currName) => {
         if (isPlay && (activeLoops.length === 1)) setIsPlay(false);
-        const pathIdx = activeLoops.findIndex(activeLoop => {
-            const { href } = window.location;
-            const newPath = href + path.substring(9);
-            return newPath === activeLoop.src;
+        const pathIdx = activeLoopsName.findIndex(name => {
+            return name === currName;
         })
         if (pathIdx !== -1) {
             const newActiveLoops = [...activeLoops];
             newActiveLoops[pathIdx].pause();
             newActiveLoops.splice(pathIdx, 1);
             setActiveLoops(newActiveLoops);
+            const newActiveLoopsName = [...activeLoopsName];
+            newActiveLoopsName.splice(pathIdx, 1);
+            setactiveLoopsName(newActiveLoopsName);
         }
     }
 
