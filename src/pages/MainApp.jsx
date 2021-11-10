@@ -65,7 +65,7 @@ export const MainApp = () => {
         if (isPlay && (activeLoops.length === 1)) setIsPlay(false);
         const pathIdx = activeLoops.findIndex(activeLoop => {
             const { href } = window.location;
-            const newPath = href + path.substring(8);
+            const newPath = href + path.substring(9);
             return newPath === activeLoop.src;
         })
         if (pathIdx !== -1) {
