@@ -10,5 +10,12 @@ And dont forget to have fun !
 
 # Technologies
 
-In this project I used react framework.
+react framework.
 
+SCSS
+
+
+# How to run
+
+1. npm i
+2. npm start
