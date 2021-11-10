@@ -3,7 +3,7 @@ import { MdOutlineMusicNote } from "react-icons/md";
 import { MdOutlineMusicOff } from "react-icons/md";
 
 export const LoopPreview = ({loop, onPlay,onStop}) => {
-    const [isOn,setIsOn] = useState(false)
+    const [isOn,setIsOn] = useState(false);
         return (
             <div className={`loop-card ${isOn ? 'isOn' : ''} flex column align-center`} >
             <div className='loop-actions flex'>

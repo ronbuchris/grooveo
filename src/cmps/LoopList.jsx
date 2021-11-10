@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import { LoopPreview } from './LoopPreview'
+import { LoopPreview } from './LoopPreview';
 
 export const LoopList = ({loops, onPlay, onStop})=> {
         return (

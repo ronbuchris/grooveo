@@ -1,31 +1,31 @@
-import React, { useState } from 'react'
-import { loops } from '../services/loop.service'
-import { LoopList } from '../cmps/LoopList'
+import React, { useState } from 'react';
+import { loops } from '../services/loop.service';
+import { LoopList } from '../cmps/LoopList';
 
 export const MainApp = () => {
-    const [isPlay, setIsPlay] = useState(false)
-    const [isTurnOn, SetIsTurnOn] = useState(false)
-    const [activeLoops, setActiveLoops] = useState([])
+    const [isPlay, setIsPlay] = useState(false);
+    const [isTurnOn, SetIsTurnOn] = useState(false);
+    const [activeLoops, setActiveLoops] = useState([]);
 
     const onActivate = (bool) => {
-        SetIsTurnOn(bool)
+        SetIsTurnOn(bool);
         if (bool) {
-            playLoops()
+            playLoops();
         } else {
-            stopLoops()
+            stopLoops();
         }
     }
 
     const playLoops = () => {
         activeLoops.forEach(activeLoop => {
-            activeLoop.play()
+            activeLoop.play();
             activeLoop.loop = true;
         })
     }
 
     const stopLoops = () => {
         activeLoops.forEach(activeLoop => {
-            activeLoop.pause()
+            activeLoop.pause();
             activeLoop.currentTime = 0;
 
         })
@@ -33,13 +33,13 @@ export const MainApp = () => {
 
 
     const onPlay = (path) => {
-        const loop = new Audio(path)
+        const loop = new Audio(path);
 
         if (isPlay) {
             const isLoopPlaying = activeLoops.some(activeLoop => {
-                const { href } = window.location
-                const newPath = href + path.substring(1)
-                return newPath === activeLoop.src
+                const { href } = window.location;
+                const newPath = href + path.substring(1);
+                return newPath === activeLoop.src;
             })
             if (isLoopPlaying) return;
             const currentTime = activeLoops[0].currentTime * 1000;
@@ -56,23 +56,23 @@ export const MainApp = () => {
             }
         }
         const newActiveLoops = [...activeLoops];
-        newActiveLoops.push(loop)
-        setActiveLoops(newActiveLoops)
-        console.log(`newActiveLoops`, newActiveLoops)
+        newActiveLoops.push(loop);
+        setActiveLoops(newActiveLoops);
+        console.log(`Push`, newActiveLoops)
     }
 
     const onStop = (path) => {
-        if (isPlay && (activeLoops.length === 1)) setIsPlay(false)
+        if (isPlay && (activeLoops.length === 1)) setIsPlay(false);
         const pathIdx = activeLoops.findIndex(activeLoop => {
-            const { href } = window.location
-            const newPath = href + path.substring(1)
-            return newPath === activeLoop.src
+            const { href } = window.location;
+            const newPath = href + path.substring(8);
+            return newPath === activeLoop.src;
         })
         if (pathIdx !== -1) {
             const newActiveLoops = [...activeLoops];
             newActiveLoops[pathIdx].pause();
-            newActiveLoops.splice(pathIdx, 1)
-            setActiveLoops(newActiveLoops)
+            newActiveLoops.splice(pathIdx, 1);
+            setActiveLoops(newActiveLoops);
         }
     }
 
