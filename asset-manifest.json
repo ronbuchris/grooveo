@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/grooveo/static/css/main.6a6143ff.chunk.css",
+    "main.js": "/grooveo/static/js/main.ea10206a.chunk.js",
+    "main.js.map": "/grooveo/static/js/main.ea10206a.chunk.js.map",
+    "runtime-main.js": "/grooveo/static/js/runtime-main.69faa6e2.js",
+    "runtime-main.js.map": "/grooveo/static/js/runtime-main.69faa6e2.js.map",
+    "static/js/2.96cdcbd1.chunk.js": "/grooveo/static/js/2.96cdcbd1.chunk.js",
+    "static/js/2.96cdcbd1.chunk.js.map": "/grooveo/static/js/2.96cdcbd1.chunk.js.map",
+    "index.html": "/grooveo/index.html",
+    "static/css/main.6a6143ff.chunk.css.map": "/grooveo/static/css/main.6a6143ff.chunk.css.map",
+    "static/js/2.96cdcbd1.chunk.js.LICENSE.txt": "/grooveo/static/js/2.96cdcbd1.chunk.js.LICENSE.txt",
+    "static/media/120_future_funk_beats_25.5eb417fc.mp3": "/grooveo/static/media/120_future_funk_beats_25.5eb417fc.mp3",
+    "static/media/120_stutter_breakbeats_16.37c82282.mp3": "/grooveo/static/media/120_stutter_breakbeats_16.37c82282.mp3",
+    "static/media/Bass_Warwick_heavy_funk_groove_on_E_120BPM.52c24c81.mp3": "/grooveo/static/media/Bass_Warwick_heavy_funk_groove_on_E_120BPM.52c24c81.mp3",
+    "static/media/FUD_120_StompySlosh.27bdc145.mp3": "/grooveo/static/media/FUD_120_StompySlosh.27bdc145.mp3",
+    "static/media/GrooveB_120bpm_Tanggu.3e1411b4.mp3": "/grooveo/static/media/GrooveB_120bpm_Tanggu.3e1411b4.mp3",
+    "static/media/MazePolitics_120_Perc.2d08c654.mp3": "/grooveo/static/media/MazePolitics_120_Perc.2d08c654.mp3",
+    "static/media/main.scss": "/grooveo/static/media/Montserrat-Regular.3cd78665.ttf",
+    "static/media/PAS3GROOVE1.03B.f77c6da4.mp3": "/grooveo/static/media/PAS3GROOVE1.03B.f77c6da4.mp3",
+    "static/media/SilentStar_120_Em_OrganSynth.f2d668af.mp3": "/grooveo/static/media/SilentStar_120_Em_OrganSynth.f2d668af.mp3",
+    "static/media/african_drum.6e40c8ad.png": "/grooveo/static/media/african_drum.6e40c8ad.png",
+    "static/media/base2.6ae374e3.png": "/grooveo/static/media/base2.6ae374e3.png",
+    "static/media/base3.0a003cb3.png": "/grooveo/static/media/base3.0a003cb3.png",
+    "static/media/bass.0a4c1ae8.png": "/grooveo/static/media/bass.0a4c1ae8.png",
+    "static/media/drums.9e37ecf2.png": "/grooveo/static/media/drums.9e37ecf2.png",
+    "static/media/electric_guitar_coutry_slide_120bpm-B.230fcab8.mp3": "/grooveo/static/media/electric_guitar_coutry_slide_120bpm-B.230fcab8.mp3",
+    "static/media/grooveo.0efe32f4.jpg": "/grooveo/static/media/grooveo.0efe32f4.jpg",
+    "static/media/guitar.a859d9e2.png": "/grooveo/static/media/guitar.a859d9e2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69faa6e2.js",
+    "static/js/2.96cdcbd1.chunk.js",
+    "static/css/main.6a6143ff.chunk.css",
+    "static/js/main.ea10206a.chunk.js"
+  ]
+}
