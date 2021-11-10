@@ -1,0 +1,56 @@
+.app-container{
+    flex-direction: row;
+    height: 100vh;
+}
+
+.main-app{
+    max-width:960px;
+    margin:0 auto;
+    .actions-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    // gap: 30px;
+    margin-right: 12px;
+    margin-top: 20px;
+    input[type="checkbox"] {
+        visibility: hidden;
+        margin:0;
+        &:checked + label {
+            transform: rotate(360deg);
+            background-color: $clr3;
+            &:before {
+                transform: translateX(40px);
+                background-color: $clr1;
+            }
+        }
+    }
+    label {
+        display: flex;
+        width: 80px;
+        height: 40px;
+        border: 2px solid $clr5;
+        border-radius: 20px;
+        position: relative;
+        transition: transform .75s ease-in-out;
+        transform-origin: 50% 50%;
+        cursor: pointer;
+        
+        &:before {
+            transition: transform .75s ease;
+            transition-delay: .5s;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: $clr3;
+            border-radius: 50%;
+            top: 3px;
+            left: 3px;
+        }
+    }
+    }
+}
+

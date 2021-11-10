@@ -1,0 +1,21 @@
+.app-header {
+    background-color: $clr5;
+    color:$clr1;
+    padding: 10px;
+    .main-app{
+        >div{
+            justify-content: center;
+            gap:15px;
+            .grooveo-icon{
+                width: 35px;
+                height: 35px;
+            }
+            @include for-normal-layout {
+                @media (min-width: $narrow-breakpoint) {
+                    justify-content: flex-start;
+                }
+              }
+        }
+    }
+
+}

@@ -1,0 +1,37 @@
+.loop-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 140px;
+    height: 80px;
+    padding: 5px 10px;
+    background-color: $clr2;
+    @include for-normal-layout {
+        @media (min-width: $narrow-breakpoint) {
+            width: 290px;
+            height: 150px;
+            padding:10px;
+        }
+      }
+    &.isOn{
+        background-color: $clr4;
+
+    }
+    .instrumental-img{
+        width:100%;
+        height: 35px;
+        margin-top: 5px;
+        @include for-normal-layout {
+            @media (min-width: $narrow-breakpoint) {
+                height: 80px;
+                margin-top: 10px;
+            }
+          }
+    } 
+    .loop-actions{
+
+        .btn{
+            gap: 4px;
+        }
+    }
+}
